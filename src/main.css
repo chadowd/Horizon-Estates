@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-  body{
-    background: linear-gradient(135deg, #0b1f33,#e9e3d5);
-  }
+ 
 .present{
     width: 100%;
     height: 100vh;
@@ -16,42 +15,192 @@
     flex-direction: column;
     align-items: center;
     padding: 100px;
+   
+}
+.videoback{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    filter: brightness(0.3);
+    
 }
 .text{
     display: flex;
     flex-direction: column;
     gap: 20px;
     font-family: 'Playfair Display', serif;
+    z-index: 10;
+    transform: translate(-20px);
+    opacity: 0;
+}
+.text.view{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Playfair Display', serif;
+    opacity: 1;
+    z-index: 10;
+     animation: fadeText .8s ease-in-out;
 }
 .text h1{
-    width: 300px;
+     font-family: "Lobster Two", sans-serif;
+    width: 400px;
+    color: #e9e3d5;
     visibility: visible;
     white-space: normal;
-    text-align: left;
+    /* text-align: left; */
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 800;
+    animation-delay: 0.6s;
 }
 .text p{
     font-family: 'Cormorant Garamond', serif;
     font-size: 22px;
-    font-weight: 400;
-    width: 700px;
+    font-weight: 600;
+    width: 800px;
+    color: #e9e3d5;
+    animation-delay: 0.8s;
 }
 #view{
-    width:120px;
+    width:150px;
     height: 35px;
     border-radius: 20px;
     position: relative;
     left: 200px;
     top: 50px;
     border: none;
-    box-shadow: 3px 3px 4px , -3px -3px #e9e3d5; 
+    color: #171717;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Lobster Two", sans-serif;
+    z-index: 10;
+    cursor: pointer;
+    animation-delay: 0.9;
+    background: #778ca4;
+    box-shadow: 2px 2px 3px ,-2px -2px #4f6271;
+    transition: all .5s ease-in-out;
+    opacity: 1;
+
 }
-#view img{
+#view.hide{
+    opacity: 1;
+     animation: push .5s ease-in-out;
+}
+#view a{
+    position:absolute;
+    top: 8px;
+    color: #e9e3d5;
+    left: 15%;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#view:hover{
+     transition: 0.6s ease;
+    color: #e9e3d5;
+    background: transparent;
+}
+@keyframes fadeText {
+    from{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes push{
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+ /* partie du header */
+ .logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    height: 150px;
+ }
+ .logo img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+.top{
+    width: 100vw;
+    height: 65%;
+}
+.background{
+    width: 100vw;
+    height: 100%;
+    z-index: 1;
+}
+.background img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter:brightness(0.4);
+}
+.icon img{
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    position: absolute;
-    top: 15px;
-    right: 15px;
+}
+.menu{
+   position: absolute;
+   top: 20px;
+   left: 40%;
+   transition: all .8s ease-in-out;
+}
+.menu li{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+.menu a{
+    padding: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    color: #e9e3d5;
+    font-family: "Lobster Two", sans-serif;
+    transition: all .8s ease-in-out;
+}
+.menu a::before{
+    content: '';
+    position:absolute;
+    top: 30px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #eeddc4;
+    transition: all .8s ease-in-out;
+}
+.menu a:hover::before{
+    width: 100%;
 }

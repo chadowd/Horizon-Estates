@@ -10,7 +10,7 @@
     background: #0b1f33;
     padding: 100px;
     transition: all .8s ease-in-out;
-    z-index: 1000;
+    z-index: 10;
 }
  img{
     width: 128px;
@@ -38,6 +38,9 @@
     height: 100%;
     width: 0;
     background:#e9e3d5 ;
+}
+#number{
+   color: #e9e3d5; 
 }
 .load.fin{
     transition: opacity 0.9s ease, visibility 0.8s ease;

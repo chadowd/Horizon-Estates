@@ -1,7 +1,8 @@
 const load = document.querySelector('.load')
 const number = document.querySelector('#number')
 const bar = document.querySelector('.bar')
-
+window.addEventListener('DOMContentLoaded',()=>{
+    
 let progress = 0
 
 // Progression de la barre
@@ -21,3 +22,4 @@ const progression = setInterval(() => {
         },200)
     }
 }, 30)
+})

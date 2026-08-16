@@ -6,13 +6,17 @@
     <link rel="stylesheet" href="/src/main.css">
     <link rel="stylesheet" href="/src/load.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <title>Horizon Estates</title>
 </head>
 <body>
     
      <!-- loading page  -->
       <div class="load">
-        <img src="public/images/icons/logo.jpeg" alt="logo" srcset="">
+        <img src="public/images/icons/Estates.png" alt="logo" srcset="">
         <div class="progress"> 
             <div class="progressbar">
                  <div class="bar"></div>
@@ -23,15 +27,20 @@
       </div>
 
       <!-- part1 presentation -->
-       <div class="present">
-        
+       <div class="videofont"> <video src="public/images/icons/background.mp4"autoplay loop muted playsinline></video>
+         <div class="present">
         <div class="text">
             
         <h1>Une nouvelle vision de l'immobilier</h1>
         <p>Horizon Estates sélectionne et présente des biens immobiliers d'exception où architecture, emplacement et raffinement se rencontrent </p>
         </div>
-        <button id="view">Voir nos bien <img src="public/images/icons/icon3.jpeg" alt="" srcset=""></button>
+      <div id="view">
+         <a href="src/composant/header.html"> Voir nos bien <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
        </div>  
+    </div>
+    
        <script src="src/js/load.js"></script>
+       <script src="src/js/main.js"></script>
 </body>
 </html>
