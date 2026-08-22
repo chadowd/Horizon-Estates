@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-    <title>Horizon Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <title>Horizon Home</title>
 </head>
 <body>
     <header class="top">
@@ -23,10 +25,10 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="">Home</a>
-                        <a href="">Service</a>
-                        <a href="">About</a>
-                        <a href="">Contact</a>
+                        <a href="/src/composant/header.html">Home</a>
+                        <a href="/src/service/service.html">Service</a>
+                        <a href="/src/page/about.html">About</a>
+                        <a href="/src/page/contact.html">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -40,30 +42,37 @@
                  à investir dans un bien à fort potentiel ou à vendre votre propriété au meilleur prix,
                  notre équipe d'experts est là pour vous accompagner à chaque étape.</h5>
 </div>
+        <button class="voir">Explore Nos biens</button>
     </header>
                     <!-- part des propietées  -->
-    <div class="propriety">
-        
         <div class="ask">
             <h1 id="propText">Pourquoi choisir Horizon Estates ?</h1>
-            <p>Une expertise locale & internationale : Une connaissance approfondie du marché pour vous proposer les meilleures opportunités.</p>
-            <p>Un accompagnement sur-mesure : Des solutions adaptées à vos besoins, votre budget et votre vision.</p>
-            <p>Transparence & Sérénité : Un suivi clair et rigoureux, de la première visite jusqu'à la signature finale.</p>
+            <p class="para">Une expertise locale & internationale : Une connaissance approfondie du marché pour vous proposer les meilleures opportunités.<i class="bsc-building-house-home-bank-11"></i></p>
+            <p class="para">Un accompagnement sur-mesure : Des solutions adaptées à vos besoins, votre budget et votre vision.</p>
+            <p class="para">Transparence & Sérénité : Un suivi clair et rigoureux, de la première visite jusqu'à la signature finale.</p>
         </div>
+
+        <!-- faire des cartes -->
+
+
+    <div class="propriety">
+        <h1>Nos proprietés</h1>
         <div id="home">
             <div class="carte">
                 <img src="/public/images/home1.jpeg" alt="img" srcset="">
                 <div class="descript1">
-                    <h1>Villa moderne</h1>
-                    <p>Kinshasa</p>
+                    <h1>Villa Horizon</h1>
+                    <p> <i class="fa-solid fa-location-dot"></i>Kinshasa</p>
                     <h3>$45.000</h3>
                     <div class="icon">
                         <div class="sallBain">
-                            <img src="/public/images/icons/icon5.png" alt="">
-                            <h4>3 Salles de bain</h4>
+                            <!-- <img src="/public/images/icons/icon5.png" alt=""> -->
+                             <i class="fa-solid fa-bath">6</i>
+                            <h4>douches</h4>
                         </div>
                         <div class="bedRoom">
-                            <img src="/public/images/icons/icon4.png" alt="">
+                             <i class="fa-solid fa-bed">4</i>
+                             <h4>chambre</h4>
                         </div>
                     </div>
                 </div>
@@ -71,17 +80,19 @@
             <div class="carte">
                 <img src="/public/images/home2.jpeg" alt="">
                 <div class="descript2">
-                     <h1>Villa moderne</h1>
-                    <p>Matadi</p>
+                     <h1>Villa Miroir</h1>
+                    <p><i class="fa-solid fa-location-dot"></i>Matadi</p>
                     <h3>$45.000</h3>
                     <div class="icon">
                          <div class="sallBain">
-                            <img src="/public/images/icons/icon5.png" alt="">
-                            <h4>3 Salles de bain</h4>
+                            <!-- <img src="/public/images/icons/icon5.png" alt=""> -->
+                             <i class="fa-solid fa-bath">6</i>
+                            <h4>douches</h4>
                         </div>
                         
                         <div class="bedRoom">
-                            <img src="/public/images/icons/icon4.png" alt="">
+                           <i class="fa-solid fa-bed">7</i>
+                           <h4>chambre</h4>
                         </div>
                     </div>
                 </div>
@@ -89,17 +100,20 @@
             <div class="carte">
                 <img src="/public/images/home3.jpeg" alt="">
                 <div class="descript3">
-                     <h1>Villa moderne</h1>
-                    <p>Lubumbashi</p>
+                     <h1>Villa Olivera</h1>
+                    <p><i class="fa-solid fa-location-dot"></i>Lubumbashi</p>
                     <h3>$40.000</h3>
                     <div class="icon">
                          <div class="sallBain">
-                            <img src="/public/images/icons/icon5.png" alt="">
-                            <h4>3 Salles de bain</h4>
+                            <!-- <img src="/public/images/icons/icon5.png" alt=""> -->
+                             <i class="fa-solid fa-bath">4</i>
+                            <h4>douches</h4>
                         </div>
                         
                         <div class="bedRoom">
-                            <img src="/public/images/icons/icon4.png" alt="">
+                            <!-- <img src="/public/images/icons/icon4.png" alt=""> -->
+                             <i class="fa-solid fa-bed">6</i>
+                             <h4>chambre</h4>
                         </div>
                     </div>
                 </div>
@@ -107,64 +121,74 @@
             <div class="carte">
                 <img src="/public/images/home4.jpeg" alt="">
                 <div class="descript4">
-                     <h1>Villa moderne</h1>
-                    <p>Katanga</p>
+                     <h1>Villa Riviera</h1>
+                    <p> <i class="fa-solid fa-location-dot"></i>Katanga</p>
                     <h3>$38.000</h3>
                     <div class="icon">
                        <div class="sallBain">
-                            <img src="/public/images/icons/icon5.png" alt="">
-                            <h4>3 Salles de bain</h4>
+                            <!-- <img src="/public/images/icons/icon5.png" alt=""> -->
+                            <i class="fa-solid fa-bath">2</i>
+                            <h4>douches</h4>
                         </div>
                         
                         <div class="bedRoom">
-                            <img src="/public/images/icons/icon4.png" alt="">
+                             
+                            <!-- <img src="/public/images/icons/icon4.png" alt=""> -->
+                              <i class="fa-solid fa-bed">3</i>
+                              <h4>chambres</h4>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="carte">
                 <img src="/public/images/home5.jpeg" alt="">
-                <div class="descript5"> <h1>Villa moderne</h1>
+                <div class="descript5"> <h1>Villa Boréale</h1>
                     <p>Kinshasa</p>
                     <h3>$35.000</h3>
                     <div class="icon">
                          <div class="sallBain">
-                            <img src="/public/images/icons/icon5.png" alt="">
-                            <h4>3 Salles de bain</h4>
+                            <!-- <img src="/public/images/icons/icon5.png" alt=""> -->
+                             <i class="fa-solid fa-bath">3</i>
+                            <h4>douches</h4>
                         </div>
                         
                         <div class="bedRoom">
-                            <img src="/public/images/icons/icon4.png" alt="">
+                            <!-- <img src="/public/images/icons/icon4.png" alt=""> -->
+                             <i class="fa-solid fa-bed">5</i>
+                             <h4>chambre</h4>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="carte">
                 <img src="/public/images/home6.jpeg" alt="">
-                <div class="descript6"> <h1>Villa moderne</h1>
-                    <p>Kinshasa</p>
+                <div class="descript6"> <h1>Loft Ambriose</h1>
+                    <p> <i class="fa-solid fa-location-dot"></i>   Kinshasa</p>
                     <h3>$29.000</h3>
                     <div class="icon">
                          <div class="sallBain">
-                            <img src="/public/images/icons/icon5.png" alt="">
-                            <h4>3 Salles de bain</h4>
+                            <i class="fa-solid fa-bath">4</i>
+                            <!-- <img src="/public/images/icons/icon5.png" alt=""> -->
+                            <h4>douches</h4>
                         </div>
                         
                         <div class="bedRoom">
-                            <img src="/public/images/icons/icon4.png" alt="">
+                            <!-- <img src="/public/images/icons/icon4.png" alt=""> -->
+                             <i class="fa-solid fa-bed">5</i>
+                             <h4>douches</h4>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
         </div>
+    </div>
+    <div class="btnSlider">
+         
+        <button class="return"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="pass"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <div class="next">
+        <a href="/src/service/service.html"> Suivant</a>
     </div>
     <script src="/src/js/main.js"></script>
 </body>
