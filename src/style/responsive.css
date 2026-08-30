@@ -342,8 +342,9 @@
     position: relative;
 }
 .activeForm{
-    width: 300px;
-    position: relative;
+    width: 300px !important;
+    position: relative !important;
+    display: block;
 }
 .backContactForm{
     width: 108vw;
@@ -354,11 +355,11 @@
     background: rgba(39, 37, 37, 0.1);
 }
 form{
-    width: 350px;
+    width: 300px !important;
     height: fit-content;
     background-color:  #131936;
     margin: 0 auto;
-    transform: translate(50px,20%) !important;
+    transform: translate(20px,20%)!important;
     display: none;
     z-index: 100;
 }
@@ -378,7 +379,7 @@ form.formView{
 }
 .footerTop{
     padding: 20px;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     margin: 0 auto;
     gap: 20px;
@@ -387,14 +388,14 @@ form.formView{
     transform: translateX(-50px);
 }
 .footerTop img{
-    width: 350px;
+    width: 350px !important;
     height: 350px;
     border-radius: 15px;
     object-fit: cover;
     filter: saturate(2);
 }
 footer{
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     gap: 20px;
 }
@@ -605,7 +606,6 @@ footer{
 }
 .activeForm{
     width: 300px;
-    display: none;
     position: relative;
 }
 .backContactForm{
@@ -622,7 +622,7 @@ form{
     /* changer le font */
     background-color:  #131936;
     margin: 0 auto;
-    transform: translate(-50%,20%) !important;
+    transform: translate(-50%,20%);
     z-index: 100;
 }
 /*footer parti*/
