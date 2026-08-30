@@ -3,10 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/main.css">
+    <link rel="stylesheet" href="/src/propieté.css">
+    <link rel="stylesheet" href="/src/style/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Caveat:wght@400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <title>contact</title>
 </head>
 <body>
-    
+     
+ <section class="contact">
+       <div class="heroContact">
+        <div class="logo">
+            <img src="/public/images/icons/LogoHorizon.png" alt="">
+        </div>
+        <div class="backContact">
+            <video src="/public/images/icons/contactVideo.mp4" autoplay loop muted play></video>
+        </div>
+        <div class="textContact">
+            <h1>Prenez contact</h1>
+        </div>
+    </div>
+
+    <div class="form">
+        <!-- <h1></h1> -->
+        <div class="formResponsive">
+            <div class="activeForm">
+                <button class="formContact">Prendre contacte</button>
+            </div>
+            <div class="backContactForm">
+                 <form action="">
+            <h1>Nous Contacter</h1>
+            <label for="name">Nom</label>
+            <span class="error"></span>
+            <input type="text" name="name" id="name" required>
+            <label for="email">Votre Email</label>
+            <span class="error"></span>
+            <input type="email" name="email" id="email" required>
+            <span class="error"></span>
+            <label for="tel">Votre numéro de telephone</label>
+            <input type="tel" name="tel" id="tel" required>
+            <label for="choix">Votre Type de demande</label>
+                <select name="choix" id="choix" required>
+                    <option value="1">Achat de proprétes</option>
+                    <option value="2">Ventes de propriétes</option>
+                    <option value="3">Location de propriétes</option>
+                </select>
+                <label for="mail">Votre message</label>
+                <textarea name="mail" id="mail"></textarea>
+                <div class="sendContact">
+                    <button class="send">
+                    Envoyer
+                </button>
+                </div>
+         </form>
+            </div>
+            
+        </div>
+    </div>
+ </section>
+
+<section class="footerS">
+     <!--Footer-->
+
+    <div class="footer">
+       <div class="footerTop">
+         <h1>Pret a concretiser votre projet </h1>
+        <p>Que vous cherchiez à acheter, vendre ou louer une propriété  notre équipe est à votre ecoute</p>
+        <img src="/public/images/serviceFont.jpeg" alt="">
+       </div>
+        <footer>
+            <div class="prensentFooter">
+                 <img src="/public/images/icons/LogoHorizon.png" alt="">
+            <h1>L'immobilier Autrement</h1>
+            <p>Horizo Estates vous accompagne dans vos projets d'achat, vente, location et conseil immobilier  avec une approche fondée sur la confiance et l'excellence</p>
+                <div class="link">
+                    <h1>Suivez nous</h1>
+                    <div class="linkA">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="serviceFooter">
+                <h1>Service</h1>
+                <h3>Achat Immobilier</h3>
+                <h3>Vendre de proprieté</h3>
+                <h3>Location</h3>
+                <h3>Conseil Immobilier</h3>
+            </div>
+            <div class="navigationFooter">
+                <h1> Navigation</h1>
+                <a href="/src/composant/header.html">Accueil</a>
+                <a href="/src/composant/header.html#propriete">Proprieté</a>
+                <a href="/src/page/service.html#about">A propos</a>
+                <a href="/src/page/service.html">Service</a>
+                <a href="/src/page/contact.html">Contact</a>
+            </div>
+            <div class="coordonnées">
+               <h3><i class="fa-solid fa-location-dot"></i>kinshasa , RDC</h3>
+               <h3><i class="fa-solid fa-envelope"></i>contact@horizonestates.com</h3>
+               <h3><i class="fa-solid fa-phone"></i>+243 8406331484</h3>
+               <h3> <i class="fa-solid fa-clock"></i>lun - Ven : 8h00 -18h00 <br> sam :9h00 - 13h00</h3>
+            </div>
+        </footer>
+    </div>
+</section>
+<script src="/src/js/service.js"></script>
 </body>
 </html>

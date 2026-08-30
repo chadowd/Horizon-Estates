@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+<link rel="stylesheet" href="/src/style/responsive.css">
   <title>Horizon Home</title>
 </head>
 <body>
@@ -21,18 +21,23 @@
         <div class="logo">
             <img src="/public/images/icons/LogoHorizon.png" alt="">
         </div>
-        <div class="menu">
+            <div class="burgerMenu">
+                  <button class="burger" id="menuBtn"> <i class="fa-solid fa-bars"></i></button>
+                       <div class="menu">
+          
             <nav>
                 <ul>
                     <li>
                         <a href="/src/composant/header.html">Home</a>
                         <a href="/src/page/service.html">Service</a>
-                        <a href="/src/page/about.html">About</a>
+                        <a href="/src/page/service.html#about">About</a>
                         <a href="/src/page/contact.html">Contact</a>
                     </li>
                 </ul>
+                
             </nav>
         </div>
+            </div>
         <div class="textHeader"> 
         <h1>Bienvenue chez Horizon Estates </h1>
         <p>votre partenaire de confiance pour concrétiser tous vos projets immobiliers,<br>
@@ -42,7 +47,7 @@
                  à investir dans un bien à fort potentiel ou à vendre votre propriété au meilleur prix,
                  notre équipe d'experts est là pour vous accompagner à chaque étape.</h5>
 </div>
-        <button class="voir">Explore Nos biens</button>
+        <a href="#propriete" class="voir">Explore Nos biens</a>
     </header>
                     <!-- part des propietées  -->
         <div class="ask">
@@ -54,7 +59,8 @@
 
         <!-- faire des cartes -->
 
-
+<section id="propriete">
+    
     <div class="propriety">
         <h1>Nos proprietés</h1>
         <div id="home">
@@ -182,6 +188,7 @@
             </div>
         </div>
     </div>
+</section>
     <div class="btnSlider">
          
         <button class="return"><i class="fa-solid fa-arrow-left"></i></button>

@@ -1,8 +1,13 @@
 html{
       background: linear-gradient(190deg, #0b1f33,#30495e);
+      scroll-behavior: smooth;
+      transition: all .5s ease-in-out;
 }
 .voir{
     position: absolute;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
     top: 50%;
     right: 20%;
     width: 120px;
@@ -45,7 +50,7 @@ html{
 .para{ 
     position: relative;
     left: 10%;
-    padding: 20px;
+    padding: 20px; 
     font-size: 20px;
     font-family: "Lobster Two", sans-serif;
     color: #f5f5f5;
@@ -213,4 +218,307 @@ html{
     font-weight: 500;
     font-family: "Lobster Two", sans-serif;
     
+}
+/* contact part + footer part */
+
+.contact{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 150px;
+    height: 150px;
+  
+ }
+ .logo img{
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    z-index: 1;
+ }
+.backContact{
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+}
+.backContact video{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.3);
+}
+.textContact{
+    /* z-index: 10; */
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-weight: 600;
+    font-family: "Lobster Two", sans-serif;
+    color: #f2f2f2;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.textContact.contactView{
+    opacity: 1;
+    transform: translateX(0);
+    animation: FadeHeader .7s ease-in-out;
+}
+@keyframes FadeHeader {
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*cacher le button pour la responsive*/
+.formContact{
+    width: 150px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    background: #131936;
+    color: #f2f2f2;
+    position: absolute;
+    top: 60%;
+    left: 65%;
+
+}
+.form{
+    position: absolute;
+    top: 3%;
+    right: 20%;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 400px;
+    opacity: 0;
+    transform: translateY(50px); 
+}
+.form.FomrView{
+    opacity: 1;
+    transform: translateY(0);
+    animation: FadeForm .7s ease-in-out;
+}
+@keyframes FadeForm {
+    from{
+       opacity: 0;
+       transform: translateY(50px); 
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.form h1{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Lobster Two", sans-serif;
+    color: #f2f2f2;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #f5f5f5;
+    border-radius: 15px;
+    padding: 10px;
+    background: transparent;
+    backdrop-filter: blur(8px); 
+  
+}
+form h1{
+    text-align: center;
+    color: #f2f2f2;
+}
+form input{
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    border: #171717;
+    gap: 20px;
+}
+
+
+form label{
+    font-size: 19px;
+    font-weight: 600;
+    font-family: "Lobster Two", sans-serif;
+    color: #f2f2f2;
+}
+select{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+}
+option{
+    background: #131936;
+    color: #f2f2f2;
+}
+.send{
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    background: #0b1f33;
+    color: #f2f2f2;
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    box-shadow: 2px 2px 3px #30495e,-2px -2px;
+    cursor: pointer;
+}
+/*footer*/
+.footerS{
+   display: flex;
+   gap: 20px; 
+}
+.footer{
+    width: 100%;
+    height: 80%;
+    z-index: 10;
+}
+footer{
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    width: 100%;
+    /* padding-top: 100px;  */
+}
+.footerTop{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+    width: 80%;
+       opacity: 0;
+        transform: translateX(-50px);
+}
+.footerTop.viewFooter{
+    opacity: 1;
+    transform: translateX(0);
+    animation: FadeFooter .6s ease-in-out;
+}
+@keyframes FadeFooter {
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.footerTop h1{
+    color: #ffeda8;
+    font-weight: 600;
+     font-family: "Lobster Two", sans-serif;
+}
+.footerTop p{
+    color: #f2f2f2;
+    font-weight: 600;
+    font-size: 20px;
+}
+.footerTop img{
+    width: 550px;
+    height: 350px;
+    border-radius: 15px;
+    object-fit: cover;
+    filter: saturate(2);
+}
+.prensentFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.prensentFooter img{
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    filter: saturate(2);
+}
+.prensentFooter h1{
+    color: #ffeda8;
+    font-weight: 600;
+    font-family: "Lobster Two", sans-serif;
+}
+.prensentFooter p{
+    width: 350px;
+    color: #f2f2f2;
+    font-weight: 600;
+    font-size: 20px;
+}
+ .link{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-decoration: none;
+}
+.linkA{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.linkA a{
+    color: #ffeda8;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.serviceFooter{
+    display: flex;
+    flex-direction: column;
+}
+.serviceFooter h1{
+     color: #ffeda8;
+    font-weight: 600;
+    font-family: "Lobster Two", sans-serif;
+}
+.serviceFooter h3{
+    color: #f5f5f5;
+    font-weight: 600;
+    font-family: "Lobster Two", sans-serif;
+}
+.navigationFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.navigationFooter h1{
+     color: #ffeda8;
+    font-weight: 600;
+    font-family: "Lobster Two", sans-serif;
+}
+.navigationFooter a{
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: 600;
+    font-family: "Lobster Two", sans-serif;
+}
+.coordonnées{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.coordonnées i,h3{
+    display: flex;
+    gap: 10px;
+    color: #f2f2f2;
 }

@@ -56,5 +56,12 @@ retour.addEventListener('click',()=>{
    position -= 370
    slider.style.transform =`translateX(-${position}px)`  
 })
-
+// button responsive
+const btnMenu = document.getElementById('menuBtn')
+let menu = document.querySelector('.menu')
+btnMenu.addEventListener('click',()=>{
+    console.log('click');
+    
+   menu.classList.toggle('mobileMenu')
+})
 

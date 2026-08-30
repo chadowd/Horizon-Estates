@@ -5,9 +5,9 @@
 }
 body{
     background: #0b1f33;
-    width: 100%;
+    /* width: 100vw;
     height: 100vh;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; */
 }
  .logoService{
     position: absolute;
@@ -29,40 +29,96 @@ body{
     height: 80%;
 }
 .serviceBack{
-    width: 100%;
-    height:100%;
+    width: 100vw;
+    height:150vh;
     overflow: hidden;
 }
 .serviceBack video{
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     object-fit: cover;
     z-index: -1;
     filter: brightness(0.3);
 }
 .textService{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
     position: absolute;
     top: 40%;
     left: 20%;
-}
-.textService h1{
-    font-family: "Lobster Two", sans-serif;
-     color: #fffda8;
-    font-size: 45px;
-    font-weight: 700;
-}
-.textService{
     font-family: "Lobster Two", sans-serif;
     color: #eeddc4;
     color: 20px;
+     transform: translateX(-50px);
+     opacity: 0;
 }
+/* animation text headerService*/
+.textService.ServiceView{
+    opacity: 1;
+    transform: translateX(0);
+    animation: FadeService .7s ease-in-out;
+   
+}
+@keyframes FadeService {
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.textService h1{
+    font-family: "Lobster Two", sans-serif;
+    color: #fffda8;
+    font-size: 45px;
+    font-weight: 700;
+    width: 500px;
+}
+.textService h2{
+    width: 700px;
+
+}
+/* .textAdd{
+    gap: 20px;
+    width: 550px;
+    height: 350px;
+   
+} */
+ .textAdd{
+    overflow: hidden;;
+ }
+ .textAdd p{
+    width: 500px;
+ }
 .presentService{
     display: flex;
     gap: 20px;
     width: 100%;
     height: 100%;
     padding: 20px;
+    transform: translateX(-50px);
+    opacity: 0;
+}
+                    /* nos service section*/
+.presentService.ServiceP{
+    opacity: 1;
+    transform: translateX(0);
+    animation: FadeSerp .7s ease-in-out;
+}
+@keyframes FadeSerp {
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .presentService h1{
     text-align: center;
@@ -82,6 +138,24 @@ body{
     align-items: center;
     background: linear-gradient(35deg,#b2d5e5, #020202 , #1f2634) ;
     backdrop-filter: blur(20px);
+      transform: translateX(-50px);
+      opacity: 0;
+}
+/*carte part */
+.cartService.Carteview{
+    opacity: 1;
+    transform: translateX(0);
+    animation: FadeCart .7s ease-in-out;
+}
+@keyframes FadeCart {
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .cartService h2,i{
     text-align: center;
@@ -96,34 +170,7 @@ body{
     color: #f5feff;
 }
 
-.intro{
-    width: 100%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-}
-.intro h1{
-    text-align: center;
-    font-size: 25px;
-    font-weight: 600;
-    font-family: "Lobster Two", sans-serif;
-    color: #fffda8;
-    font-weight: 700;
-    padding: 20px;
-}
-.intro span{
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  text-align: center;
-  margin: 0 auto;
-    padding: 20px; 
-  border-bottom: 1px solid #b2d5e5;
-    font-size: 18px;
-    color: #f5feff;
-  
-}
+
 .squad{
     display: flex;
     flex-direction: column; 
@@ -156,7 +203,26 @@ body{
     flex: 0 0 200px;
     margin: 0 auto;
     position: relative;
+    opacity: 0;
+    transform: translateY(-50px);
 }
+/* animation de carte d'equipe */
+.cartSquad.CarteSquad{
+    opacity: 1;
+    transform: translateY(0);
+    animation: FadeSquad .7s ease-in-out;
+}
+@keyframes FadeSquad {
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .cartSquad img{
     width: 250px;
     object-fit: cover;
@@ -198,6 +264,24 @@ body{
     align-items: center;
     height: 100%;
     width: 100%;
+    transform: translateX(-50px);
+    opacity: 0;
+ }
+ .presentation.presentView{
+    opacity: 1;
+    transform: translateX(0);
+    animation: fadeAbout .7s ease-in-out;
+    transition: all .6s ease-in-out;
+ }
+ @keyframes FadeAbout {
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
  }
   .presentation img{
     width: 350px;
@@ -222,23 +306,69 @@ body{
  .history p{
     color: #f2f2f2;
  }
+ .intro{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+     transform: translateY(-50px);
+     opacity: 0;
+}
+.intro.valuerView{
+    opacity: 1;
+    transform: translateY(0);
+   animation: FadeIntro .7s ease-in-out;
+}
+@keyframes FadeIntro {
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.intro h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Lobster Two", sans-serif;
+    color: #fffda8;
+    font-weight: 700;
+    padding: 20px;
+}
+.intro span{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: center;
+  margin: 0 auto;
+    padding: 20px; 
+  border-bottom: 1px solid #b2d5e5;
+    font-size: 18px;
+    color: #f5feff;
+  
+}
 .staticSection{
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: flex;
     gap: 20px;
+    padding: 20px;
 }
 .statistic{
     display: flex;
     gap: 10px;
-    height: 80%;
+    height: 100%;
     width: 100%;
     text-align: center;
 }
  .statistic div{
     display: flex;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 30px;
     /* margin: 0 auto;
     text-align: center; */
     font-size: 35px;
@@ -253,5 +383,68 @@ body{
     margin: 0 auto;
     text-align: center;
  }
- 
+ /* last part */
+ .call{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ }
+ .textCall{
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    height: 300px;
+    align-items: center;
+    transform: translateX(50px);
+    opacity: 0;
+ }
+ .textCall.callView{
+    opacity: 1;
+    transform: translateX(0);
+    animation: FadeCall .6s ease-in-out;
+ }
+ @keyframes FadeCall {
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+       opacity: 1;
+       transform: translateX(0); 
+    }
+ }
+ .textCall img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+ }
+ .textCall h1{
+    color: #fffda8;
+    font-weight: 600;
+    font-family: "Lobster Two", sans-serif;
+ }
+ .textCall p{
+    color: #f2f2f2;
+    font-weight: 500;
+ }
+ .link{
+    cursor: pointer;
+ }
+ .link a{
+     width: 200px !important;
+    border: 1px solid #eeddc4;
+    border-radius: 15px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    color: #eeddc4;
+ }
+
 

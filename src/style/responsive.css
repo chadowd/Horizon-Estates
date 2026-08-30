@@ -1,0 +1,653 @@
+@media (max-width:768px) and (max-width:800px) {
+.text.view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    gap: 20px;
+    font-family: 'Playfair Display', serif;
+    opacity: 1;
+    z-index: 10;
+     animation: fadeText .8s ease-in-out;
+}
+.text h1{
+    font-family: "Lobster Two", sans-serif;
+    text-align: center;
+    width: 400px;
+    color: #e9e3d5;
+    visibility: visible;
+    white-space: normal;
+    font-size: 2.5rem;
+    font-weight: 800;
+    animation-delay: 0.6s;
+}
+.text p{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    width: 300px;
+    color: #e9e3d5;
+    animation-delay: 0.8s;
+}
+#view{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#view a{
+    position:absolute;
+    top: 8px;
+    color: #e9e3d5;
+    left: 20px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    width: 100px;
+    transform:translateX(-50px);
+}
+/* partie d'accueil*/
+ .logo img{
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    z-index: 1;
+ }
+ .background{
+    width: 100vw;
+    height: 100vh;
+ }
+ .background img{
+    object-fit: cover;
+     width: auto;
+    height: 105vh;
+    filter:brightness(0.2);
+    z-index: 1000;
+}
+ .menu {
+    position: absolute;
+   top: 20px;
+   right: 40%;
+   transition: all .8s ease-in-out;
+    animation: fadeIn .5s ease-in-out ;
+ }
+.burger{
+    opacity: 1;
+    display: block;
+    border-radius: 15px;
+    border: none;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    left: 35%;
+    top: 5px;
+
+}
+.burgerMenu{
+    position: absolute;
+    top: 0;
+    right: 125px;
+}
+.menu nav{
+    align-items: center;
+     border: 1px solid #e9e3d5;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    height: 200px;
+    width: 150px;
+    opacity: 0;
+    display: none;
+     border: 1px solid #e9e3d5;
+    background: transparent;
+    backdrop-filter: blur(8px);
+     position: absolute;
+    top: 20px;
+    right: 40%;
+    transition: all .8s ease-in-out;
+    animation: fadeIn .5s ease-in-out ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+ .menu.mobileMenu nav{
+    opacity: 1;
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+} 
+
+ .menu li{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    margin: 0 auto;
+}
+/* text header */
+.textHeader{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+}
+.textHeader p{
+    width: 200px;
+}
+.textHeader h5{
+    width: 300px;
+    font-size: 19px;
+}
+.voir{
+    top:55%;
+    right: 5%;
+}
+.ask{
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+.ask h1{
+     /* padding-top: 50px; */
+    margin-top: 50px;
+    width: 300px;
+}
+#propText{
+    width: 300px !important;  
+}
+.para.paraView{
+    max-width: 300px !important;
+}
+
+/*service part */
+.logoService img{
+    width: 120px;
+    height: 120px;
+}
+.serviceHeader{
+     width: auto;
+    height: 100vh;
+}
+
+.serviceBack video{ 
+    position: relative;
+    width: 100vw !important;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.3);
+}
+.textService{
+    width: 200px !important;
+    display: flex;
+    flex-direction: column;
+}
+.textService h1{
+    width:300px !important;
+    transform: translateX(-50px) !important;
+}
+.textService h2{
+    width: 200px;
+    transform: translateX(-50px);
+}
+.presentService{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contentSquad {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+ #about{
+    transform: translateY(30%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+ .presentation{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+   
+ }
+ .presentation img{
+    /* forcer l'image à s'adapter */
+    transform: translateY(50px);
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+ }
+
+.StatHome{
+    width: 100px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.StatHome span{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    width: 55px;
+    height: 35px;
+    font-size: 18px;
+    
+}
+/* forcer les elements à être bien centrée */
+.block{
+    transform: translateX(30px);
+}
+.block2{
+    transform: translate(-35px);
+}
+.StatHome p{
+    width: 35px;
+    font-size: 15px;
+    
+}
+.statistic{
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    width: 205px;
+    font-size: 18px;
+
+}
+ /*call to action */
+ .call{
+    display: flex;
+    flex-direction: column;
+ }
+ .textCall{
+    display: flex !important;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+}
+.textCall img{
+    width: 350px;
+    height: 350px;
+}
+/* forcer le bouton à s'adapter*/
+.link{
+    padding: 50px;
+}
+.link a{
+    transform: translateY(50px)!important;
+}
+    /*contact part*/
+    .contact{
+    position: relative;
+    width: 100vw;
+    height: 105vh;
+}
+.logo{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 150px;
+    height: 150px;
+  
+ }
+ .logo img{
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    z-index: 1;
+ }
+ .backContact{
+    width: 100vw;
+    height: 105vh;
+ }
+.backContact video{
+    position: relative;
+    width: 100vh !important;
+    height: 105vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.3);
+}
+.heroContact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.textContact{
+    width: 250px;
+}
+.formResponsive{
+    position: relative;
+}
+.activeForm{
+    width: 300px;
+    position: relative;
+}
+.backContactForm{
+    width: 108vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background: rgba(39, 37, 37, 0.1);
+}
+form{
+    width: 350px;
+    height: fit-content;
+    background-color:  #131936;
+    margin: 0 auto;
+    transform: translate(50px,20%) !important;
+    display: none;
+    z-index: 100;
+}
+form.formView{
+    display: block;
+    padding: 20px;
+}
+#mail{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 25px;
+    align-items: center;
+}
+.sendContact{
+    padding: 15px;
+}
+.footerTop{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 20px;
+    width: 80%;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+.footerTop img{
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    object-fit: cover;
+    filter: saturate(2);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+}
+/*Tablette responsive*/
+@media screen and (max-width:1024px) {
+    .text h1{
+    font-family: "Lobster Two", sans-serif;
+    text-align: center;
+    width: 600px;
+    color: #e9e3d5;
+    visibility: visible;
+    white-space: normal;
+    font-size: 2.5rem;
+    font-weight: 800;
+    animation-delay: 0.6s;
+}
+.text p{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    width: 900px;
+    color: #e9e3d5;
+    animation-delay: 0.8s;
+}
+#view{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#view a{
+    position:absolute;
+    top: 8px;
+    color: #e9e3d5;
+    left: 20px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    width: 100px;
+    transform:translateX(-50px);
+}
+/* partie d'accueil*/
+ .logo img{
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    z-index: 1;
+ }
+ .background{
+    width: 100vw;
+    height: 100vh;
+ }
+ .background img{
+    object-fit: cover;
+    width: auto;
+    height: 105vh;
+    filter:brightness(0.2);
+    z-index: 1000;
+}
+.text p{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    width: 320px;
+    color: #e9e3d5;
+    animation-delay: 0.8s;
+}
+#view{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#view a{
+    position:absolute;
+    top: 8px;
+    color: #e9e3d5;
+    left: 80px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+}
+.voir{
+    top:55%;
+    right: 5%;
+}
+.ask{
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+.ask h1{
+    margin-top: 50px;
+    width: 800px;
+}
+#propText{
+    width: 900px;  
+}
+.para.paraView{
+    max-width: 700px;
+}
+/* service parti*/
+.logoService img{
+    width: 120px;
+    height: 120px;
+}
+.serviceHeader{
+    width: auto;
+    height: 100vh;
+}
+/* .serviceBack{
+     max-width: 100vw;
+    height:150vh;
+    overflow: hidden; 
+} */
+.serviceBack video{
+    position: relative;
+    width: auto;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.3);
+}
+.cartService {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.textService{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.textService h1{
+    width: 500px;
+    transform: translateX(-50px);
+}
+.textService h2{
+    width: 320px;
+    transform: translateX(-50px);
+}
+.presentService{
+  grid-template-columns:  repeat( 1fr);
+  gap: 20px;
+}
+.contentSquad{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+.call{
+    transform: translateY(50px);
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textCall{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.statistic{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+}
+.textCall{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 20px;
+}
+.link{
+    /* display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px; */
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 20px;
+} 
+.link a{
+    /* forcer le button*/
+    transform: translateX(150px);
+}
+/*contact parts*/
+ .backContact{
+    width: 100vw;
+    height: 105vh;
+ }
+.backContact video{
+    position: relative;
+    width: 100vh !important;
+    height: 105vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.3);
+}
+.heroContact{
+    display: flex;
+    display: flex;
+    gap: 20px;
+}
+.textContact{
+    width: 250px;
+}
+.formResponsive{
+    position: relative;
+}
+.activeForm{
+    width: 300px;
+    display: none;
+    position: relative;
+}
+.backContactForm{
+    width: 108vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background: rgba(39, 37, 37, 0.1);
+}
+form{
+    width: 350px;
+    height: fit-content;
+    /* changer le font */
+    background-color:  #131936;
+    margin: 0 auto;
+    transform: translate(-50%,20%) !important;
+    z-index: 100;
+}
+/*footer parti*/
+.footerTop{
+    padding: 20px;
+   display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0 auto;
+    gap: 20px;
+    width: 90%;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+.footerTop img{
+    width: 400px;
+    height: 350px;
+    border-radius: 15px;
+    object-fit: cover;
+    filter: saturate(2);
+}
+footer{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+}
